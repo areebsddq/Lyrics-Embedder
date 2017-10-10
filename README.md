@@ -11,9 +11,9 @@ I made this project mostly for person use, but also to learn about:
 * Learning how to read words
 
 # Dependencies
-* PyQt 5 (For GUI)
-* Mutagen (For MP3 stuff)
-* Chardet, Ftfy, and UnicodeData (For unicode and lyrics stuff)
+* [PyQt5](https://pypi.python.org/pypi/PyQt5) (For GUI)
+* [Mutagen](https://mutagen.readthedocs.io/en/latest/) (For MP3 stuff)
+* [Chardet](https://pypi.python.org/pypi/chardet) and [Ftfy](https://github.com/LuminosoInsight/python-ftfy) (For unicode and lyrics stuff)
 
 # Further improvements:
 * Find a better way to get genius.com url 
