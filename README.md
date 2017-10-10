@@ -1,6 +1,6 @@
 # Lyrics-Embedder
 
-An application that'll get lyrics from genius.com (if they exist) and put them into your mp3 files. For it to work you need to have the title and artist tags in the mp3. 
+An application that'll scrape Song Lyrics from Genius.com (if they exist) and put them into your mp3 files. For it to work you need to have the Title and Artist tags in the mp3 file. 
 
 # Why make this? WHY? FOR THE LOVE OF GOD WHY?
 
@@ -18,5 +18,6 @@ I made this project mostly for person use, but also to learn about:
 # Further improvements:
 * Find a better way to get Genius.com url 
 * Make a lyrics box that displays what we scraped (GUI is so difficuuult)
+* Make it so users can manually insert Titles and Artists for songs. 
 * Maybe implement detecting/translating non-english lyrics
 
