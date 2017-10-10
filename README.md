@@ -16,7 +16,7 @@ I made this project mostly for person use, but also to learn about:
 * [Chardet](https://pypi.python.org/pypi/chardet) and [Ftfy](https://github.com/LuminosoInsight/python-ftfy) (For unicode and lyrics stuff)
 
 # Further improvements:
-* Find a better way to get genius.com url 
-* Make a lyrics box that displays what we scraped 
+* Find a better way to get Genius.com url 
+* Make a lyrics box that displays what we scraped (GUI is so difficuuult)
 * Maybe implement detecting/translating non-english lyrics
 
