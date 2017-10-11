@@ -7,7 +7,7 @@ An application that'll scrape Song Lyrics from Genius.com (if they exist) and pu
 I made this project mostly for person use, but also to learn about: 
 * MP3 manipulation
 * Web scraping
-* Trying muli-threading
+* Trying out multi-threading
 * Learning how to read words
 
 # Dependencies
