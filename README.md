@@ -8,7 +8,6 @@ I made this project mostly for person use, but also to learn about:
 * MP3 manipulation
 * Web scraping
 * Trying out multi-threading as opposed to multi-processing
-* Learning how to read words
 
 # Dependencies
 * [PyQt5](https://pypi.python.org/pypi/PyQt5) (For GUI)
@@ -17,7 +16,7 @@ I made this project mostly for person use, but also to learn about:
 
 # Further improvements:
 * Find a better way to get Genius.com url 
-* Make a lyrics box that displays what we scraped (GUI is so difficuuult)
-* Make it so users can manually insert Titles and Artists for songs. 
+* Make a lyrics box that displays what we scraped
+* Make it so users can manually insert Titles and Artists for songs 
 * Maybe implement detecting/translating non-english lyrics
 
