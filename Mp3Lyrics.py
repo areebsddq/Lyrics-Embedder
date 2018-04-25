@@ -25,8 +25,11 @@ def remove_accent_letters(str):
     return u"".join([c for c in nfkd_form if not unicodedata.combining(c)])
 
 
+def remove_brackets(str):
+    return(re.sub(r"\(.+\)", "", str))
+
 def strip_tag_details(str):
-    for c in (",", "'", "'", "`", "’", "(live)", "(Live)", "(cover)", "(Cover)" "(", ")", "?", ".",  "!", "*"):
+    for c in (",", "'", "'", "`", "’", "?", ".",  "!", "*"):
         str = str.replace(c, "")
 
     str = str.replace("&", "and")
@@ -35,8 +38,8 @@ def strip_tag_details(str):
 
     return str
 
-def get_lyrics(title, artist):
-    #Incase there are several artists
+def create_url(title, artist):
+    # Incase there are several artists
     artist = artist.split(",")[0]
 
     title = strip_tag_details(title)
@@ -44,10 +47,15 @@ def get_lyrics(title, artist):
 
     wordList = artist.split() + title.split()
     wordList.append("lyrics")
-    
+
     urlTrail = '-'.join(wordList)
 
     url = "https://genius.com/" + urlTrail
+
+    return url
+
+def get_lyrics(title, artist):
+    url = create_url(title, artist)
 
     try:
         #We give a known user agent so that the site doesn't block access.
@@ -55,8 +63,15 @@ def get_lyrics(title, artist):
         page = urllib.request.urlopen(reqObj)
 
     except:
-        print("Error with url (may not exist): " + url, file = sys.stderr)
-        return
+        try:
+            url = create_url(remove_brackets(title), artist)
+
+            reqObj = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            page = urllib.request.urlopen(reqObj)
+
+        except:
+            print("Error with url (may not exist): " + url, file = sys.stderr)
+            return
 
     pageData = page.read()
 
@@ -183,6 +198,8 @@ class Window(QWidget):
 
     def add_lyrics_to_song(self, songFiles):
         songList = list(songFiles)
+
+        f = open("songs.txt", "w")
 
         for song in songList:
             try:
