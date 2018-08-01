@@ -4,7 +4,7 @@ An application that'll scrape Song Lyrics from Genius.com (if they exist) and pu
 
 # Why make this? WHY?
 
-I made this project mostly for person use, but also to learn about: 
+I made this project mostly for personal use, but also to learn about: 
 * MP3 manipulation
 * Web scraping
 * Trying out multi-threading as opposed to multi-processing
