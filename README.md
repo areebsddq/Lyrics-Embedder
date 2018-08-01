@@ -2,7 +2,7 @@
 
 An application that'll scrape Song Lyrics from Genius.com (if they exist) and put them into your mp3 files. For it to work you need to have the Title and Artist tags in the mp3 file. 
 
-# Why make this? WHY? FOR THE LOVE OF GOD WHY?
+# Why make this? WHY?
 
 I made this project mostly for person use, but also to learn about: 
 * MP3 manipulation
