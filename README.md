@@ -7,7 +7,7 @@ An application that'll scrape Song Lyrics from Genius.com (if they exist) and pu
 I made this project mostly for personal use, but also to learn about: 
 * MP3 manipulation
 * Web scraping
-* Trying out multi-threading as opposed to multi-processing
+* Trying out multi-threading in python
 
 # Dependencies
 * [PyQt5](https://pypi.python.org/pypi/PyQt5) (For GUI)
